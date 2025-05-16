@@ -1,0 +1,135 @@
+.picture1 {
+    width: 100%;
+    max-width: 300px;
+    height: 180px;
+    border-radius: 10px;   
+    margin-top: 9px; 
+}
+
+.slider-box {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 400px;
+   
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    transition: 0.5s ease-in-out;
+    padding: 0;
+    margin: 0;
+}
+
+.slider ul li {
+    list-style: none;
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.content {
+    background-color: #FBF8EF;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(56, 50, 50, 0.249);
+    width: 100%;
+    height:100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Outfit", sans-serif;
+    color: #d78904;
+    padding: 10px;
+}
+
+.slide-button,.page-nav {
+    background: linear-gradient(45deg,#49857fe6, rgb(167, 234, 221));
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(56, 50, 50, 0.249);
+    font-family: "Outfit", sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+}
+
+.slide-button:active{
+    color: white;
+    background: linear-gradient(45deg, rgb(167, 234, 221),#49857fe6);
+}
+
+.page-nav{
+    width: 150px;
+    background: linear-gradient(45deg,#ec990afa,#62a69fe6) ;
+}
+
+.page-nav:active{
+    color: white;
+    background: linear-gradient(45deg,#62a69fe6,#ec990afa)
+}
+/* Responsiveness */
+@media screen and (max-width: 600px) {
+    .picture1 {
+        max-width: 300px;
+        height: 170px;
+    }
+
+    .main-content p {
+        font-size: 15px;
+    }
+
+    .slide-button {
+        width: 100px;
+        font-size: 14px;
+    }
+    .page-nav{
+        width: 90px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 369px) {
+    .picture1{
+        max-width: 250px;
+        height: 130px;
+    }
+    .main-content p{
+        font-size: 15px;
+    }
+    .slider-box {
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+    .slider{
+        width: 80%;
+    }
+    .page-nav{
+        width: 90px;
+        font-size: 12px;
+    }
+}
+
+
